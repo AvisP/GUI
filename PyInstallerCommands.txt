@@ -1,0 +1,22 @@
+pip install pysimplegui
+
+pip install pysimplegui-exemaker
+
+python -m pysimplegui-exemaker.pysimplegui-exemaker
+
+pyinstaller --onefile --icon=WOF.ico --hidden-import tkinter HDDApp3_1.py
+
+pyi-makespec [--onefile --hidden-import tkinter] NewApp15.py
+
+cd /D N:\Final Validation Testing 2\temp\Final Validation Testing
+
+a.datas += [('Logo.png','N:\Final Validation Testing 2\temp\Final Validation Testing','DATA') ]
+
+pyinstaller main.spec
+
+
+https://stackoverflow.com/questions/42164910/pyinstaller-images-fail-to-extract/42170011#42170011
+
+https://stackoverflow.com/questions/42251295/file-path-for-pyinstaller-bundled-images
+https://pythonhosted.org/PyInstaller/usage.html
+https://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
